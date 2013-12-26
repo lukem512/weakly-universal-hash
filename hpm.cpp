@@ -10,15 +10,8 @@ int main(int argc, char** argv)
     const unsigned int m = 1024;
 
     // large prime
-    // s.t. p > m
+    // s.t. p > |U|
     const unsigned int p = 3571;
-
-    // perform sanity check
-    if (p < m)
-    {
-        std::cerr << "p must be greater than table size" << std::endl;
-        return -1;
-    }
 
     std::cout << "Using table size of " << m << " with p = " << p << std::endl;
 
@@ -46,3 +39,4 @@ int main(int argc, char** argv)
 
     return 0;
 }
+
